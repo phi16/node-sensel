@@ -1,0 +1,13 @@
+{
+  "name": "node-sensel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bindings": "*",
+    "node-addon-api": "*"
+  },
+  "author": "phi16",
+  "license": "MIT",
+  "gypfile": true
+}
