@@ -1,6 +1,12 @@
 const sensel = require('bindings')('sensel');
-console.log(sensel.hello());
 
-exports.hello = _=>{
-  return sensel.hello();
-};
+const h = sensel.Open();
+console.log(h);
+sensel.StartScanning(h);
+
+while(true) {
+  sensel.Frame(h, (f,i,n)=>{
+    console.log(`${sensel.NumContacts(f)} / ${n}`);
+    return true;
+  });
+}

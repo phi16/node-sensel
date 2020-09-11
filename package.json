@@ -7,6 +7,9 @@
     "bindings": "*",
     "node-addon-api": "*"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "phi16",
   "license": "MIT",
   "gypfile": true
