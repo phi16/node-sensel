@@ -230,6 +230,7 @@ void slSetContactsMask(const Napi::CallbackInfo& info) {
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
   InitWrapper(Handle);
+  InitWrapper(Frame);
   Declare(Open);
   Declare(Close);
   Declare(StartScanning);
